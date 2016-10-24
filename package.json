@@ -1,0 +1,36 @@
+{
+  "name": "mynodebase",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mitch Tuck aka matuck",
+  "license": "MIT",
+  "dependencies": {
+    "hapi": "^15.1.1",
+    "hapi-config": "^0.2.2",
+    "hapi-io": "^0.1.0",
+    "mysql2": "^1.1.1",
+    "sequelize": "^3.24.3",
+    "sqlite3": "^3.1.6"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.16.0",
+    "babel-core": "^6.17.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.16.0",
+    "babel-preset-latest": "^6.16.0",
+    "webpack": "^1.13.2"
+  },
+  "keywords": [],
+  "description": "Hapi Server preset up with some additonial modules that I use in almost every applicaiton I build",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/matuck/mynodebase.git"
+  },
+  "bugs": {
+    "url": "https://github.com/matuck/mynodebase/issues"
+  },
+  "homepage": "https://github.com/matuck/mynodebase#readme"
+}
