@@ -28,11 +28,10 @@ gulp.task('test', function() {
     .once('end', () => {
       process.exit();
     });
-
 });
 
 gulp.task('test2', function() {
-  console.log('test');
+  runSequence('server', 'test');
 });
 
 gulp.task('start', function () {
@@ -48,6 +47,7 @@ gulp.task('start', function () {
   server.on('exit', function (code) {
     console.log('child process exited with code ' + code.toString());
   });
+
   return server;
 });
 
@@ -66,4 +66,3 @@ gulp.task('start-debug', ['build'], function () {
   });
   return server;
 });
-
