@@ -1,4 +1,5 @@
 # My Node Base
+[![Build Status](https://travis-ci.org/matuck/mynodebase.svg?branch=master)](https://travis-ci.org/matuck/mynodebase)
 
 This is my default framework for node applications I develop.  Most all apps 
 I have developed that are node based will be based on this project.  Clone this
