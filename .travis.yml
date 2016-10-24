@@ -8,5 +8,6 @@ before_script:
   - npm install
   - gulp build
   - gulp start &
+  - sleep 10
 script:
   - gulp test
