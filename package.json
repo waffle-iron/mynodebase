@@ -15,6 +15,7 @@
     "hapi-config": "^0.2.2",
     "hapi-io": "^0.1.0",
     "mysql2": "^1.1.1",
+    "request": "^2.76.0",
     "sequelize": "^3.24.3",
     "sqlite3": "^3.1.6",
     "winston": "^2.2.0"
