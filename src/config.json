@@ -1,5 +1,0 @@
-{
-  database: {
-    dialect: "sqlite", //sqlite, postgress, mysql, mariadb
-  }
-}

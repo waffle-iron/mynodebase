@@ -1,14 +1,11 @@
-//'use strict';
-
-//var db = require('./db.js');
-
 const Hapi = require('hapi');
-import Config from './config';
+import { config } from './config';
+import { logger } from './services/logger';
+
 // Create a server with a host and port
 const server = new Hapi.Server();
-console.log(Config);
-Config.increment();
-setTimeout(function(){ console.log(Config); }, 6000);
+server.on('response', function(request, response) {logger.info(request.info.remoteAddress + ': ' + request.method.toUpperCase() + ' ' + request.url.path + ' --> ' + request.response.statusCode);});
+//server.on('log', function(data) {logger.info(data);});
 import db from './db2';
 server.connection({ 
     host: 'localhost', 
@@ -36,8 +33,9 @@ server.route({
 server.start((err) => {
 
     if (err) {
+	logger.error(err);
         throw err;
     }
-    console.log('Server running at:', server.info.uri);
+    logger.info('Server running at: '+ server.info.uri);
 });
  

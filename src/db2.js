@@ -1,8 +1,5 @@
-import Config from './config';
-
-console.log(Config);
-setTimeout(function(){ console.log(Config); Config.increment(); }, 3000);
-
+import { config } from './config';
+import { logger } from './services/logger';
 export function db() {
 
   return '';

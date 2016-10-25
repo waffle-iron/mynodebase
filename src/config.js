@@ -1,17 +1,9 @@
 class Config {
   constructor(initial) {
-    this.seed = initial
-  }
-
-  increment() {
-    return this.seed += 1
+    this.config = require('../config/default.json');
+    console.log(this.config);
   }
 }
 
-if(global['config'] == undefined) {
-	global['config'] = new Config(0);
-} else {
-global['config'].increment();
-}
-export default config = global['config'];
+export let config = new Config(0);
 
