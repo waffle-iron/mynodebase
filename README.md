@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/matuck/mynodebase.png?label=ready&title=Ready)](https://waffle.io/matuck/mynodebase)
 # My Node Base
 [![Build Status](https://travis-ci.org/matuck/mynodebase.svg?branch=master)](https://travis-ci.org/matuck/mynodebase)
 
